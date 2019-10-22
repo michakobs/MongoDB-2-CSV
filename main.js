@@ -46,7 +46,6 @@ let createTableCsv = (data) => {
 
 (async() => {
     const data = await dataData.find(searchQuery1)
-    //console.log(data[0]);
     
     let table = createTableCsv(data);
     await fs.writeFileSync('./table.csv', table)
